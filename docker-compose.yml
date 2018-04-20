@@ -16,3 +16,6 @@ services:
     container_name: ipsec-vpn-server
     volumes:
       - /lib/modules:/lib/modules:ro
+      - ./etc/ppp/chap-secrets:/etc/ppp/chap-secrets
+      - ./etc/ipsec.d/passwd:/etc/ipsec.d/passwd
+      - ./etc/ipsec.secrets:/etc/ipsec.secrets
